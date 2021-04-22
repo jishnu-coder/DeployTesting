@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "weatherapi-d1eb"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "weatherapi-d1eb"
+  template:
+    metadata:
+      labels:
+        app: "weatherapi-d1eb"
+    spec:
+      containers:
+        - name: "weatherapi-d1eb"
+          image: "weatherapiconntainer.azurecr.io/weatherapi"
+          ports:
+          - containerPort: 80
