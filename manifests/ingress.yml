@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "weatherapi-d1eb"
+    labels:
+        app: "weatherapi-d1eb"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: weatherapi9e16-weatherapi-d1eb.bc1e9f4b9eb743a1b7de.centralus.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "weatherapi-d1eb"
+                servicePort: 80
