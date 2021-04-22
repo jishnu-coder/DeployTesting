@@ -5,7 +5,7 @@ metadata:
     labels:
         app: "weatherapi-3e54"
 spec:
-    type: ClusterIP
+    type: LoadBalancer
     ports:
     - port: 80
       targetPort: 80
