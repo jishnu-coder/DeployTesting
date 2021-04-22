@@ -6,10 +6,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
-COPY ["DeployDemo.csproj", ""]
-RUN dotnet restore "./DeployDemo.csproj"
+COPY ["DeployDemo/DeployDemo.csproj", "DeployDemo/"]
+RUN dotnet restore "DeployDemo/DeployDemo.csproj"
 COPY . .
-WORKDIR "/src/."
+WORKDIR "/src/DeployDemo"
 RUN dotnet build "DeployDemo.csproj" -c Release -o /app/build
 
 FROM build AS publish

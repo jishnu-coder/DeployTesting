@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\DeployDemo\\DeployDemo\\DeployDemo.csproj": {}
+    "G:\\DeployDemo\\DeployDemo.csproj": {}
   },
   "projects": {
-    "G:\\DeployDemo\\DeployDemo\\DeployDemo.csproj": {
+    "G:\\DeployDemo\\DeployDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DeployDemo\\DeployDemo\\DeployDemo.csproj",
+        "projectUniqueName": "G:\\DeployDemo\\DeployDemo.csproj",
         "projectName": "DeployDemo",
-        "projectPath": "G:\\DeployDemo\\DeployDemo\\DeployDemo.csproj",
+        "projectPath": "G:\\DeployDemo\\DeployDemo.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "G:\\DeployDemo\\DeployDemo\\obj\\",
+        "outputPath": "G:\\DeployDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
