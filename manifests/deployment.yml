@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "weatherinformation-ce2d"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "weatherinformation-ce2d"
+  template:
+    metadata:
+      labels:
+        app: "weatherinformation-ce2d"
+    spec:
+      containers:
+        - name: "weatherinformation-ce2d"
+          image: "weatherapiconntainer.azurecr.io/weatherinformation"
+          ports:
+          - containerPort: 80
