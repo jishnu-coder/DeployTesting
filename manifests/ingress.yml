@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "weatherinformation-ce2d"
+    labels:
+        app: "weatherinformation-ce2d"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: weatherinformationa13f-weatherinformation-ce2d.39633805085945239403.eastus2.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "weatherinformation-ce2d"
+                servicePort: 80
